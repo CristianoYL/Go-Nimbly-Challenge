@@ -6,7 +6,7 @@ const askNewton = (operation, expression) => {
   // remove illegal chars
   let cleanExpression = expression.replace(/[^a-z0-9A-Z+\-/*().\^]/g, '');
   // replace / with (over) as per required by API
-  cleanExpression = cleanExpression.replace('/', '(over)');
+  cleanExpression = cleanExpression.replace(/[/]/g, '(over)');
   const url = `https://newton.now.sh/${operation}/${cleanExpression}`;
   return fetch(url)
     .then((res) => {

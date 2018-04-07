@@ -1,0 +1,21 @@
+.menu-container {
+  color: var(--color-primary);
+  margin: 0 0;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.menu-container label {
+  color: var(--color-primary);
+}
+
+#operation-select {
+  color: var(--color-primary);
+  background-color: var(--color-accent);
+  border-color: var(--color-primary);
+  margin-left: 1.5rem;
+}
+
+#operation-select option{
+  background-color: var(--color-accent);
+}

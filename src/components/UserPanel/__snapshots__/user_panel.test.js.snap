@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`User panel renders 1`] = `
+<div
+  className="user-panel"
+>
+  <div
+    className="text-field-container"
+  >
+    <div
+      className="message-text"
+    >
+      <h2>
+        test
+      </h2>
+    </div>
+    <div
+      className="menu-container full-width"
+    >
+      <label
+        htmlFor="operation-select"
+        target="_select"
+      >
+        select a math operation
+        <select
+          id="operation-select"
+          onChange={[Function]}
+          value="default"
+        >
+          <option
+            disabled={true}
+            value="default"
+          >
+            -- select an operation --
+          </option>
+          <option
+            value="simplify"
+          >
+            Simplify
+          </option>
+          <option
+            value="factor"
+          >
+            Factor
+          </option>
+          <option
+            value="derive"
+          >
+            Derive
+          </option>
+          <option
+            value="integrate"
+          >
+            Integrate
+          </option>
+          <option
+            value="zeroes"
+          >
+            Find 0s
+          </option>
+        </select>
+      </label>
+    </div>
+    <div
+      className="text-field full-width"
+    >
+      <label
+        htmlFor="your math expression*"
+        target="_input"
+      >
+        your math expression*
+        <input
+          id="your math expression*"
+          onChange={[Function]}
+          placeholder="your math expression*"
+          value=""
+        />
+      </label>
+    </div>
+    <button
+      className="btn-submit"
+      onClick={[Function]}
+    >
+      Get Result
+    </button>
+  </div>
+</div>
+`;

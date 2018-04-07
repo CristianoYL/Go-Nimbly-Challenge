@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DropdownMenu with all props 1`] = `
+<div
+  className="menu-container test-name"
+>
+  <label
+    htmlFor="operation-select"
+    target="_select"
+  >
+    test hint
+    <select
+      id="operation-select"
+      onChange={[Function]}
+      value="default"
+    >
+      <option
+        disabled={true}
+        value="default"
+      >
+        -- select an operation --
+      </option>
+      <option
+        value="simplify"
+      >
+        Simplify
+      </option>
+    </select>
+  </label>
+</div>
+`;
+
+exports[`DropdownMenu without className 1`] = `
+<div
+  className="menu-container "
+>
+  <label
+    htmlFor="operation-select"
+    target="_select"
+  >
+    test
+    <select
+      id="operation-select"
+      onChange={[Function]}
+      value="default"
+    >
+      <option
+        disabled={true}
+        value="default"
+      >
+        -- select an operation --
+      </option>
+      <option
+        value="simplify"
+      >
+        Simplify
+      </option>
+    </select>
+  </label>
+</div>
+`;
+
+exports[`props.onSelected gets called 1`] = `
+<div
+  className="menu-container test-name"
+>
+  <label
+    htmlFor="operation-select"
+    target="_select"
+  >
+    test hint
+    <select
+      id="operation-select"
+      onChange={[Function]}
+      value="default"
+    >
+      <option
+        disabled={true}
+        value="default"
+      >
+        -- select an operation --
+      </option>
+      <option
+        value="simplify"
+      >
+        Simplify
+      </option>
+    </select>
+  </label>
+</div>
+`;

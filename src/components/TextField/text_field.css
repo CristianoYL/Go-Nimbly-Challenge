@@ -1,0 +1,36 @@
+.text-field {
+  margin: 0 0;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+input {
+  margin: 0 auto;
+  width: 100%;
+  font-size: 150%;
+  border: none;
+  border-bottom: 1px solid grey;
+  background-color: transparent;
+  outline: none;
+  color: var(--color-primary);
+}
+
+input:focus {
+  border-bottom: 1px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.text-field label:focus-within{
+  color: var(--color-primary);
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+.text-field label {
+  color: transparent;
+  margin-top: 10px;
+  margin-bottom: 1px;
+  font-size: 70%;
+}

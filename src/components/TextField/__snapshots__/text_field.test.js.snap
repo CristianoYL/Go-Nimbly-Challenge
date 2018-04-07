@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextField without className 1`] = `
+<div
+  className="text-field "
+>
+  <label
+    htmlFor="test"
+    target="_input"
+  >
+    test
+    <input
+      id="test"
+      onChange={[Function]}
+      placeholder="test"
+      value=""
+    />
+  </label>
+</div>
+`;
+
+exports[`TextPanel with all props 1`] = `
+<div
+  className="text-field test-class"
+>
+  <label
+    htmlFor="test hint"
+    target="_input"
+  >
+    test hint
+    <input
+      id="test hint"
+      onChange={[Function]}
+      placeholder="test hint"
+      value=""
+    />
+  </label>
+</div>
+`;
+
+exports[`props.onTextChange gets called 1`] = `
+<div
+  className="text-field test-class"
+>
+  <label
+    htmlFor="test hint"
+    target="_input"
+  >
+    test hint
+    <input
+      id="test hint"
+      onChange={[Function]}
+      placeholder="test hint"
+      value=""
+    />
+  </label>
+</div>
+`;

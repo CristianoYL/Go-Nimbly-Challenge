@@ -1,0 +1,23 @@
+.display-panel {
+  color: var(--color-accent);
+  background-color: var(--color-primary);
+  height: 100%;
+}
+
+.display-text {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 7rem;
+}
+
+h3 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 125%;
+}

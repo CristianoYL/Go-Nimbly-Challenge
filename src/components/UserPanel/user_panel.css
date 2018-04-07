@@ -1,0 +1,41 @@
+.user-panel {
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.text-field-container {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.message-text {
+  align-self: flex-start;
+  color: var(--color-primary);
+}
+
+.btn-submit {
+  width: auto;
+  margin-top: 20px;
+  border: none;
+  background-color: transparent;
+  color: var(--color-primary);
+  align-self: flex-end;
+}
+
+.btn-submit:active {
+  text-shadow: 1px 1px var(--color-primary);
+}
+
+.btn-submit:focus {
+  outline: none;
+}

@@ -1,0 +1,31 @@
+.full-height {
+  height: 100%;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.app-logo {
+  animation: app-logo-spin infinite 20s linear;
+  height: 30px;
+}
+
+.app-header {
+  background-color: var(--color-primary);
+  height: 150px;
+  padding: 20px;
+  color: white;
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+}
+
+.header-text {
+  margin-top: 2rem;
+}
+
+@keyframes app-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

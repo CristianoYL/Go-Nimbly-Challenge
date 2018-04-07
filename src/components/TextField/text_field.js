@@ -10,8 +10,10 @@ export default class TextField extends Component {
   }
 
   onTextChange(value) {
-    this.setState({ value });
-    this.props.onTextChange(value);
+    // define legal chars and filter
+    const cleanValue = value.replace(/[^a-z0-9A-Z+\-/*().\^]/g, '');
+    this.setState({ value: cleanValue });
+    this.props.onTextChange(cleanValue);
   }
 
   render() {

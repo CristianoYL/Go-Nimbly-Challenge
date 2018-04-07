@@ -28,8 +28,8 @@ test('TextPanel with all props', () => {
 });
 
 test('props.onTextChange gets called', () => {
-  let oldValue = false;
-  const newValue = true;
+  let oldValue = 'old';
+  const newValue = 'new';
   const onTextChange = (value) => {
     oldValue = value;
   };

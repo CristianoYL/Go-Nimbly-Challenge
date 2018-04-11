@@ -11,7 +11,7 @@ export default class TextField extends Component {
 
   onTextChange(value) {
     // define legal chars and filter
-    const cleanValue = value.replace(/[^a-z0-9A-Z+\-/*().\^]/g, '');
+    const cleanValue = value.replace(/[^a-z0-9A-Z+/*().^-]/g, '');
     this.setState({ value: cleanValue });
     this.props.onTextChange(cleanValue);
   }
@@ -27,6 +27,7 @@ export default class TextField extends Component {
             value={this.state.value}
             placeholder={this.props.hint}
             onChange={event => this.onTextChange(event.target.value)}
+            onKeyPress={(key) => this.props.onKeyPress(key)}
           />
         </label>
       </div>

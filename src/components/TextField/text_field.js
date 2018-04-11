@@ -27,6 +27,7 @@ export default class TextField extends Component {
             value={this.state.value}
             placeholder={this.props.hint}
             onChange={event => this.onTextChange(event.target.value)}
+            onKeyPress={(event) => this.props.handleKeyPress(event)}
           />
         </label>
       </div>
@@ -39,4 +40,5 @@ TextField.propTypes = {
   hint: PropTypes.string.isRequired,
   onTextChange: PropTypes.func.isRequired,
   className: PropTypes.string,
+  handleKeyPress: PropTypes.func.isRequired,
 };

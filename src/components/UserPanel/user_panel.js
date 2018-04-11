@@ -15,6 +15,7 @@ export default class UserPanel extends Component {
     };
 
     this.getMathResult = this.getMathResult.bind(this);
+    this.handleKeyPress = this.handleKeyPress.bind(this);
   }
 
 
@@ -31,6 +32,13 @@ export default class UserPanel extends Component {
         // console.log(e);
         this.props.updateResult('Oops, an error has occurred.');
       });
+  }
+
+  handleKeyPress(event) {
+    console.log('Called!')
+    if( event.key === 'Enter' ){
+      this.getMathResult();
+    }
   }
 
   render() {
@@ -58,11 +66,8 @@ export default class UserPanel extends Component {
             className="full-width"
             hint="your math expression*"
             onTextChange={expression => this.setState({ expression })}
+            handleKeyPress={this.handleKeyPress}
           />
-
-          <button className="btn-submit" onClick={this.getMathResult}>
-            Get Result
-          </button>
         </div>
       </div>
     );

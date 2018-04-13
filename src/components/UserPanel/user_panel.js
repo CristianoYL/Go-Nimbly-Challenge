@@ -33,12 +33,7 @@ export default class UserPanel extends Component {
   }
 
   handleKeyPress(event) {
-<<<<<<< HEAD
-    console.log('Called!')
-    if( event.key === 'Enter' ){
-=======
     if (event.key === 'Enter') {
->>>>>>> rephrase_result_message
       this.getMathResult();
     }
   }
@@ -70,6 +65,12 @@ export default class UserPanel extends Component {
             onTextChange={expression => this.setState({ expression })}
             onKeyPress={this.handleKeyPress}
           />
+          <button
+            className="btn-submit"
+            onClick={this.getMathResult}
+            >
+        Get Result
+       </button>
         </div>
       </div>
     );

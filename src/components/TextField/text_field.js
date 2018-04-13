@@ -35,9 +35,14 @@ export default class TextField extends Component {
   }
 }
 
-TextField.defaultProps = { className: '' };
+TextField.defaultProps = {
+  className: '',
+  onKeyPress: () => {},
+};
+
 TextField.propTypes = {
   hint: PropTypes.string.isRequired,
   onTextChange: PropTypes.func.isRequired,
   className: PropTypes.string,
+  onKeyPress: PropTypes.func,
 };

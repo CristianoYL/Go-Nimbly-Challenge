@@ -22,23 +22,23 @@ const askNewton = (operation, expression) => {
       } else {
         switch (operation) {
           case 'simplify':
-            return `The simplified result of expression ${expression} is: ${jsonData.result}`
+            return `The simplified result of expression ${expression} is: ${jsonData.result}`;
           case 'factor':
-            return `The factorized result of expression ${expression} is: ${jsonData.result}`
+            return `The factorized result of expression ${expression} is: ${jsonData.result}`;
           case 'derive':
-            return `The derivation of expression ${expression} is: ${jsonData.result}`
+            return `The derivation of expression ${expression} is: ${jsonData.result}`;
           case 'integrate':
-            return `The integration of expression ${expression} is: ${jsonData.result}`
+            return `The integration of expression ${expression} is: ${jsonData.result}`;
           case 'zeroes':
             if (jsonData.result.includes(null)) {
-              return `Cannot find zero points for expression ${expression}`
+              return `Cannot find zero points for expression ${expression}`;
             }
-            return `The zero points found for expression ${expression} are: ${jsonData.result}`
+            return `The zero points found for expression ${expression} are: ${jsonData.result}`;
           default:
             throw new Error('Invalid operation');
         }
       }
-    })
+    });
 };
 
 export { askNewton };

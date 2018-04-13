@@ -25,19 +25,15 @@ export default class UserPanel extends Component {
     }
     askNewton(this.state.operation, this.state.expression)
       .then((result) => {
-        // console.log(jsonData);
         this.props.updateResult(result);
       })
-      .catch((e) => {
-        // console.log(e);
+      .catch((/* e */) => {
         this.props.updateResult('Oops, an error has occurred.');
       });
   }
 
   handleKeyPress(event) {
-    console.log(event.key);
     if (event.key === 'Enter') {
-      console.log("called");
       this.getMathResult();
     }
   }
@@ -67,7 +63,7 @@ export default class UserPanel extends Component {
             className="full-width"
             hint="your math expression*"
             onTextChange={expression => this.setState({ expression })}
-            onKeyPress={(key) => {this.handleKeyPress(key)}}
+            onKeyPress={this.handleKeyPress}
           />
 
           <button className="btn-submit" onClick={this.getMathResult}>

@@ -72,6 +72,7 @@ exports[`User panel renders 1`] = `
         <input
           id="your math expression*"
           onChange={[Function]}
+          onKeyPress={[Function]}
           placeholder="your math expression*"
           value=""
         />

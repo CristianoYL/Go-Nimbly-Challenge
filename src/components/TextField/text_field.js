@@ -11,7 +11,7 @@ export default class TextField extends Component {
 
   onTextChange(value) {
     // define legal chars and filter
-    const cleanValue = value.replace(/[^a-z0-9A-Z+\-/*().\^]/g, '');
+    const cleanValue = value.replace(/[^a-z0-9A-Z+/*().^-]/g, '');
     this.setState({ value: cleanValue });
     this.props.onTextChange(cleanValue);
   }
@@ -27,7 +27,7 @@ export default class TextField extends Component {
             value={this.state.value}
             placeholder={this.props.hint}
             onChange={event => this.onTextChange(event.target.value)}
-            onKeyPress={(event) => this.props.handleKeyPress(event)}
+            onKeyPress={(event) => this.props.onKeyPress(event)}
           />
         </label>
       </div>
@@ -35,10 +35,14 @@ export default class TextField extends Component {
   }
 }
 
-TextField.defaultProps = { className: '' };
+TextField.defaultProps = {
+  className: '',
+  onKeyPress: () => {},
+};
+
 TextField.propTypes = {
   hint: PropTypes.string.isRequired,
   onTextChange: PropTypes.func.isRequired,
   className: PropTypes.string,
-  handleKeyPress: PropTypes.func.isRequired,
+  onKeyPress: PropTypes.func,
 };

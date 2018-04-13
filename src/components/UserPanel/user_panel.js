@@ -24,19 +24,21 @@ export default class UserPanel extends Component {
       return;
     }
     askNewton(this.state.operation, this.state.expression)
-      .then((jsonData) => {
-        // console.log(jsonData);
-        this.props.updateResult(`${jsonData.operation} expression ${jsonData.expression} result: ${jsonData.result}`);
+      .then((result) => {
+        this.props.updateResult(result);
       })
       .catch((/* e */) => {
-        // console.log(e);
         this.props.updateResult('Oops, an error has occurred.');
       });
   }
 
   handleKeyPress(event) {
+<<<<<<< HEAD
     console.log('Called!')
     if( event.key === 'Enter' ){
+=======
+    if (event.key === 'Enter') {
+>>>>>>> rephrase_result_message
       this.getMathResult();
     }
   }
@@ -66,7 +68,7 @@ export default class UserPanel extends Component {
             className="full-width"
             hint="your math expression*"
             onTextChange={expression => this.setState({ expression })}
-            handleKeyPress={this.handleKeyPress}
+            onKeyPress={this.handleKeyPress}
           />
         </div>
       </div>

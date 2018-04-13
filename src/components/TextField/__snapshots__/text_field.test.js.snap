@@ -12,6 +12,7 @@ exports[`TextField without className 1`] = `
     <input
       id="test"
       onChange={[Function]}
+      onKeyPress={[Function]}
       placeholder="test"
       value=""
     />
@@ -31,6 +32,7 @@ exports[`TextPanel with all props 1`] = `
     <input
       id="test hint"
       onChange={[Function]}
+      onKeyPress={[Function]}
       placeholder="test hint"
       value=""
     />
@@ -50,6 +52,7 @@ exports[`props.onTextChange gets called 1`] = `
     <input
       id="test hint"
       onChange={[Function]}
+      onKeyPress={[Function]}
       placeholder="test hint"
       value=""
     />

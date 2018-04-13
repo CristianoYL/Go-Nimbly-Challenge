@@ -68,9 +68,9 @@ export default class UserPanel extends Component {
           <button
             className="btn-submit"
             onClick={this.getMathResult}
-            >
-        Get Result
-       </button>
+          >
+            Get Result
+          </button>
         </div>
       </div>
     );
